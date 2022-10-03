@@ -2,7 +2,7 @@ import Logo from "../assets/Logo.svg"
 import { Link } from "react-router-dom"
 import { useState } from 'react'
 
-export default function Headerm() {
+export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <header className="bg-green flex flex-col sm:flex-row px-4 sm:px-20 py-3 sm:pt-6 sm:items-center">

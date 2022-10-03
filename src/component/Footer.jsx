@@ -6,7 +6,7 @@ import Group37 from "../assets/Footer/Group 37.svg"
 import Group38 from "../assets/Footer/Group 38.svg"
 import Group39 from "../assets/Footer/Group 39.svg"
 
-export default function Footerm() {
+export default function Footer() {
     const imgsSrc = [Group33, Group34, Group35, Group36, Group37, Group38, Group39]
 
     return (
