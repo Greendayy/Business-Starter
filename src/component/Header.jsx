@@ -10,7 +10,7 @@ export default function Header() {
                 <img className="h-10 w-10" src={Logo} />
                 <h1 className="text-white text-3xl ml-2 mr-auto">Start</h1>
                 <button onClick={() => setIsOpen(!isOpen)} className="sm:hidden text-4xl text-white">
-                    <svg t="1664008145513" className="h-6 w-6 fill-current" viewBox="0 0 1024 1024" version="1.1"
+                    <svg t="1664008145513" className="h-6 w-6 fill-none text-white" viewBox="0 0 1024 1024" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" p-id="3353" width="200" height="200">
                         {isOpen ?
                             (<path
@@ -25,9 +25,9 @@ export default function Header() {
             <div className={isOpen ? "block" : "hidden"}>
                 <div className="flex flex-col text-sm text-white justify-end sm:flex-row sm:space-x-10">
                     <Link to="/">Home</Link>
-                    <Link to="/portfoliom">Portfolio</Link>
-                    <Link to="/servicem">Services</Link>
-                    <Link to="/contactm">Contact</Link>
+                    <Link to="/portfolio">Portfolio</Link>
+                    <Link to="/service">Services</Link>
+                    <Link to="/contact">Contact</Link>
                     <a href="https://baidu.com" target="_blank" rel="noopener noreferrer" >Baidu</a>
                 </div>
 

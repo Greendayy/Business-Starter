@@ -19,7 +19,7 @@ export default function Card(props){
             <p className=""><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
         </form>
         <div className="flex flex-col items-center">
-            <input className="border rounded mt-3 h-10 bg-neutral text-white px-3 text-center" type="button" defaultValue="Learn More" required></input>
+            <input className="border rounded mt-3 h-10 bg-neutral text-white px-3 text-center" type="button" value="Learn More" readOnly></input>
         </div>
     </div>
      )

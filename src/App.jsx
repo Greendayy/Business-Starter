@@ -1,8 +1,8 @@
 import Layout from './component/Layout'
-import Contactm from './pages/Contactm'
-import Portfoliom from './pages/Portfoliom'
-import Servicem from './pages/Servicem'
-import Homem from './pages/Homem'
+import Contact from './pages/Contact'
+import Portfolio from './pages/Portfolio'
+import Service from './pages/Service'
+import Home from './pages/Home'
 import NoPage from './component/NoPage'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -15,10 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
         {/* <Route path="/"> */}
-          <Route index element={<Homem />} />
-          <Route path="portfolio" element={<Portfoliom />} />
-          <Route path="service" element={<Servicem />} />
-          <Route path="contact" element={<Contactm />} />
+          <Route index element={<Home />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="service" element={<Service />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
