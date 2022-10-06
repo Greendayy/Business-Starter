@@ -3,8 +3,13 @@ import { Link } from "react-router-dom"
 import { useState } from 'react'
 
 export default function Header() {
+    
     const [isOpen, setIsOpen] = useState(false);
+
+    
+  
     return (
+        
         <header className="bg-green flex flex-col sm:flex-row px-4 sm:px-20 py-3 sm:pt-6 sm:items-center">
             <div className="bg-green flex items-center sm:mr-auto">
                 <img className="h-10 w-10" src={Logo} />
@@ -22,6 +27,7 @@ export default function Header() {
                     </svg>
                 </button>
             </div>
+            
             <div className={isOpen ? "block" : "hidden"}>
                 <div className="flex flex-col text-sm text-white justify-end sm:flex-row sm:space-x-10">
                     <Link to="/">Home</Link>
@@ -30,7 +36,6 @@ export default function Header() {
                     <Link to="/contact">Contact</Link>
                     <a href="https://baidu.com" target="_blank" rel="noopener noreferrer" >Baidu</a>
                 </div>
-
             </div>
         </header>
     )
