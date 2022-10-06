@@ -12,11 +12,11 @@ export default function ServiceCard(props){
             <p className="text-center text-sm text-grayer py-3">{props.text}</p>
         </div>
         <form className="text-sm py-3 pl-3">
-            <p className=""><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
-            <p className=""><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
-            <p className=""><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
-            <p className=""><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
-            <p className=""><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
+            <p><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
+            <p><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
+            <p><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
+            <p><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
+            <p><span className="text-green text-2xl px-2">{props.icon}</span> {props.form} </p>
         </form>
         <div className="flex flex-col items-center">
             <input className="border rounded mt-3 h-10 bg-neutral text-white px-3 text-center" type="button" value="Learn More" readOnly></input>

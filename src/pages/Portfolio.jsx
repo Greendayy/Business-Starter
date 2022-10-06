@@ -10,7 +10,6 @@ import data from "../TextData"
 import TextCard from "../component/TextCards"
 
 export default function Portfolio() {
-
     const textCard3 = data.filter(data => data.id === 3).map(item => {
         return (
             <TextCard
@@ -20,20 +19,19 @@ export default function Portfolio() {
         )
     })
 
+    const portfolioImgsSrc=[Frame42,Frame43,Frame41,Frame44,Frame45,Frame46,Frame47,Frame48]
+
     return (
         <main>
+            
             {textCard3}
 
             <div className="flex flex-col items-center px-6">
                 <div className="grid gap-y-10 sm:gap-y-6 gap-x-12 sm:grid-cols-2 justify-around py-12">
-                    <img src={Frame42} />
-                    <img src={Frame43} />
-                    <img src={Frame41} />
-                    <img src={Frame44} />
-                    <img src={Frame45} />
-                    <img src={Frame46} />
-                    <img src={Frame47} />
-                    <img src={Frame48} />
+
+                 {portfolioImgsSrc.map((imgSrc,index)=>
+                 (<img key={index} src={imgSrc}/>))}  
+
                 </div>
             </div>
             <div className="flex flex-col items-center">
