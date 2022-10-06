@@ -1,15 +1,20 @@
 import Map from "../assets/Map.png"
+import data from "../TextData"
+import TextCard from "../component/TextCards"
 
 export default function Contact(){
+    const textCard5=data.filter(data=>data.id===5).map(item=>{
+        return(
+            <TextCard
+            key={item.id}
+            {...item}
+            />
+        )
+    })
 
     return(
         <main className="py-4">
-
-            <div className="flex flex-col items-center">
-                <h2 className="flex text-2xl font-serif font-semibold pb-2">Contact Us</h2>
-                <p className="flex text-center text-sm leading-relaxed font-light">Lorem ipsum, dolor sit amet consectetur<br />
-                    adipisicing elit.</p>
-            </div>
+            {textCard5}
             <div className="flex flex-col-reverse sm:flex-row py-9 px-9">
                 <form className="sm:w-1/2 h-full sm:pl-6 flex flex-col sm:px-2 sm:pr-4 space-y-5">
                     <label className="text-ms font-edium sm:mb-3">Name</label>

@@ -10,9 +10,28 @@ import ceo from "../assets/Home/Group 14.svg"
 import cto from "../assets/Home/Group 15.svg"
 import designer from "../assets/Home/Group 15-1.svg"
 import developer from "../assets/Home/Group 15-2.svg"
+import data from "../TextData"
+import TextCard from "../component/TextCards"
 
 export default function Home(){
 
+const textCard1=data.filter(data=>data.id===1).map(item=>{
+    return(
+        <TextCard
+        key={item.id}
+        {...item}
+        />
+    )
+})
+
+const textCard2=data.filter(data=>data.id===2).map(item=>{
+    return(
+        <TextCard
+        key={item.id}
+        {...item}
+        />
+    )
+})
 
     return(
         <main>
@@ -34,12 +53,7 @@ export default function Home(){
 
             {/* partners */}
             <div className="flex flex-col items-center">
-                <div className="space-y-3 py-10">
-                    <p className="text-green font-semibold text-center">P A R T N E R S</p>
-                    <h3 className="text-3xl font-semibold font-serif text-center">Lorem Ipsum Dolor</h3>
-                    <p className="font-sm text-center tracking-wide">Lorem ipsum, dolor sit amet consectetur<br/>
-                        adipisicing elit.</p>
-                </div>
+                {textCard1}
                 <div className="flex flex-col space-y-10 sm:space-y-0 sm:flex-row sm:space-x-20">
                     <img src={Google} />
                     <img src={Microsoft} />
@@ -77,13 +91,10 @@ export default function Home(){
             </div>
 
             {/* team */}
+            
             <div className="flex flex-col items-center">
-                <div className="space-y-3 py-10 px-3">
-                    <p className="text-green font-semibold text-center">T E A M</p>
-                    <h2 className="text-3xl font-semibold font-serif text-center">Our Talents</h2>
-                    <p className="font-sm text-center tracking-wide">Lorem ipsum, dolor sit amet consectetur
-                        Suscipit nemo hic quos, ab,</p>
-                </div>
+            {textCard2}
+
 
                 <div className="flex flex-col sm:flex-row sm:space-x-12">
                     <div className="shadow-xl w-60 h-64 space-y-1">

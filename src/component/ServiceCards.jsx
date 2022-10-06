@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card(props){
+export default function ServiceCard(props){
      return(
         <div className="shadow-xl px-5 py-12">
         <div className="flex flex-col items-center">
