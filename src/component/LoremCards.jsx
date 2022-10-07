@@ -12,7 +12,7 @@ export default function LoremCard(props) {
                 <p className="font-extrabold mb-2 tracking-wide">{props.title}</p>
                 <h2 className="text-3xl sm:text-4xl font-semibold font-serif mb-4">{props.h2}</h2>
                 <p className="mb-6 font-light">{props.p}</p>
-                <input className={`rounded text-center py-2 mb-7 ${props.color}`} type="text" value={props.input} readOnly></input>
+                <input className={`rounded-lg text-center py-3 mb-7 tracking-wide text-xl ${props.color}`} type="text" value={props.input} readOnly></input>
             </div>
 
         </div>

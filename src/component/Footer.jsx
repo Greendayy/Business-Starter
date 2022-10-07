@@ -10,13 +10,13 @@ export default function Footer() {
     const imgsSrc = [Group33, Group34, Group35, Group36, Group37, Group38, Group39]
 
     return (
-        <footer className="flex-col items-center justify-center space-y-2 mt-auto py-3  bg-green sm:flex-row sm:px-20 sm:py-10" >
-            <div className="flex items-center justify-center space-x-2 sm:mr-auto">
+        <footer className="flex-col items-center justify-center space-y-2 mt-auto my-6 py-3  bg-green sm:flex-row sm:px-20 sm:py-10" >
+            <div className="flex items-center justify-center space-x-5 sm:mr-auto">
                 {imgsSrc.map((imgSrc, index) =>
-                    (<img key={index} className="w-3.5 h-3.5" src={imgSrc} />)
+                    (<img key={index} className="w-4 h-4" src={imgSrc} />)
                 )}
             </div>
-            <p className="text-center text-white text-xs">© Start, 2022. All rights reserved.</p>
+            <p className="text-center text-white text-base tracking-wide">© Start, 2022. All rights reserved.</p>
         </footer>
     )
 }

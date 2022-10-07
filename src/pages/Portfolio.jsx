@@ -27,7 +27,7 @@ export default function Portfolio() {
             {textCard3}
 
             <div className="flex flex-col items-center px-6">
-                <div className="grid gap-y-10 sm:gap-y-6 gap-x-12 sm:grid-cols-2 justify-around py-12">
+                <div className="grid gap-y-16 sm:gap-y-6 gap-x-12 sm:grid-cols-2 justify-around py-12">
 
                  {portfolioImgsSrc.map((imgSrc,index)=>
                  (<img key={index} src={imgSrc}/>))}  
@@ -35,7 +35,7 @@ export default function Portfolio() {
                 </div>
             </div>
             <div className="flex flex-col items-center">
-                <input className="border rounded sm:mt-3 h-10 w-40 bg-neutral text-white px-3 text-center mb-12" type="button" value="Learn More" readOnly></input>
+                <input className="border rounded sm:mt-3 h-10 w-40 bg-neutral text-white text-xl tracking-wide px-7 text-center mb-12" type="button" value="Learn More" readOnly></input>
             </div>
 
         </main>

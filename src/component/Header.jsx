@@ -10,7 +10,7 @@ export default function Header() {
         <header className="bg-green flex flex-col sm:flex-row px-4 sm:px-20 py-3 sm:pt-6 sm:items-center">
             <div className="bg-green flex items-center sm:mr-auto">
                 <img className="h-10 w-10" src={Logo} />
-                <h1 className="text-white text-3xl ml-2 mr-auto">Start</h1>
+                <h1 className="text-white text-3xl ml-2 mr-auto tracking-wide">Start</h1>
                 <button onClick={() => setIsOpen(!isOpen)} className="sm:hidden text-4xl text-white">
                     <svg t="1664008145513" className="h-6 w-6 text-white" viewBox="0 0 1024 1024" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" fill="#fff" p-id="3353" width="200" height="200">

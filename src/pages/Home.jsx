@@ -67,16 +67,16 @@ export default function Home() {
             {/* partners */}
             <div className="flex flex-col items-center">
                 {textCard1}
-                <div className="flex flex-col space-y-10 sm:space-y-0 sm:flex-row sm:space-x-20">
+                <div className="flex flex-col space-y-10 my-7 sm:space-y-0 sm:flex-row sm:space-x-20">
                     {logoImagsSrc.map((imgSrc, index) => (
                         <img key={index} src={imgSrc} />
                     ))}
                 </div>
-                <input className="border rounded h-10 bg-neutral text-white px-6 sm:px-3 text-center my-10 sm:my-20" type="button" value="Learn More" readOnly></input>
+                <input className="border rounded-lg h-12 bg-neutral text-white tracking-wide text-xl px-10 sm:px-3 text-center my-10 sm:my-20" type="button" value="Learn More" readOnly></input>
             </div>
 
             {/* main */}
-            <div className="space-y-7">
+            <div className="space-y-7 my-5">
                 {loremCard2}
             </div>
             
@@ -115,7 +115,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row sm:space-x-12">
                     {teamCard}
                 </div>
-                <input className="border rounded h-10 bg-neutral text-white px-5 text-center my-12" type="button" value="View Team" readOnly></input>
+                <input className="border rounded-lg h-12 bg-neutral text-white tracking-wide text-xl px-10 text-center my-12" type="button" value="View Team" readOnly></input>
             </div>
 
         </main>
