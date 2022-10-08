@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ServiceCard(props){
      return(
-        <div className="shadow-xl px-5 py-12">
+        <div className="shadow-3xl px-5 py-12">
         <div className="flex flex-col items-center">
             <p className="text-lg">{props.title}</p>
             <div className="flex items-center">

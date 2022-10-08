@@ -7,7 +7,7 @@ export default function Header() {
 
     return (
         
-        <header className="bg-green flex flex-col sm:flex-row px-4 sm:px-20 py-3 sm:pt-6 sm:items-center">
+        <header className="w-full bg-green flex flex-col sm:flex-row px-4 sm:px-20 py-3 sm:pt-6 sm:items-center">
             <div className="bg-green flex items-center sm:mr-auto">
                 <img className="h-10 w-10" src={Logo} />
                 <h1 className="text-white text-3xl ml-2 mr-auto tracking-wide">Start</h1>

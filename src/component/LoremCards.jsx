@@ -2,10 +2,10 @@ import React from "react";
 
 export default function LoremCard(props) {
     return (
-        <div className="flex flex-col sm:flex-row-reverse space-y-6 sm:space-y-0 sm:py-12 sm:px-16 sm:flex-row">
+        <div className={`flex flex-col space-y-6 sm:space-y-0 sm:py-12 sm:px-16 sm:flex-row sm:flex-row-${props.flex}`}>
 
             <div className="sm:basis-3/5 ">
-                <img className="px-6 sm:ml-24" src={`/images/${props.img}`} />
+                <img className={`px-6 ${props.margin}`} src={`/images/${props.img}`} />
             </div>
 
             <div className="px-6 mb:6 sm:basis-2/5 sm:space-y-9">

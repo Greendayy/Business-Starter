@@ -7,7 +7,9 @@ export default[
         h2:'Lorem ipsum dolor sit amet consectetur',
         p:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?',
         input:'Explore',
-        color:'text-black bg-white'
+        color:'text-black bg-white',
+        flex:'reverse',
+        margin:'sm:ml-24'
     },
     {
         id:2,
@@ -16,7 +18,9 @@ export default[
         h2:'Lorem ipsum dolor sit amet consectetur',
         p:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?',
         input:'Learn More',
-        color:'text-white bg-black'
+        color:'text-white bg-black',
+        flex:'',
+        margin:'sm:mr-24'
     },
     {
         id:3,
@@ -25,6 +29,8 @@ export default[
         h2:'Lorem ipsum dolor sit amet consectetur',
         p:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?',
         input:'Learn More',
-        color:'text-white bg-black'
+        color:'text-white bg-black',
+        flex:'reverse',
+        margin:'sm:ml-24'
     }
 ]

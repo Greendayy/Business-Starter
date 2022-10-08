@@ -13,7 +13,11 @@ module.exports = {
     'neutral': '#171717',
     'black' : '#1c1917'
   },
-    extend: {},
+    extend: {
+      boxShadow: {
+        '3xl': 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;',
+      }
+    },
   },
   plugins: [],
 }

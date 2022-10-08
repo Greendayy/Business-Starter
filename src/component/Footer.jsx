@@ -10,7 +10,7 @@ export default function Footer() {
     const imgsSrc = [Group33, Group34, Group35, Group36, Group37, Group38, Group39]
 
     return (
-        <footer className="flex-col items-center justify-center space-y-2 mt-auto my-6 py-3  bg-green sm:flex-row sm:px-20 sm:py-10" >
+        <footer className="w-full flex-col items-center justify-center space-y-2 mt-auto my-6 py-3  bg-green sm:flex sm:flex-row sm:items-center sm:px-20 sm:py-10" >
             <div className="flex items-center justify-center space-x-5 sm:mr-auto">
                 {imgsSrc.map((imgSrc, index) =>
                     (<img key={index} className="w-4 h-4" src={imgSrc} />)
