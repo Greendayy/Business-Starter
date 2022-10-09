@@ -6,25 +6,20 @@ import Frame46 from "../assets/Portfolio/Frame 43-4.svg"
 import Frame47 from "../assets/Portfolio/dscdsc 1.svg"
 import Frame48 from "../assets/Portfolio/5175975 1.png"
 import Frame41 from "../assets/Portfolio/Frame 43-1.svg"
-import data from "../TextData"
+import textData from "../TextData"
 import TextCard from "../component/TextCards"
 
 export default function Portfolio() {
-    const textCard3 = data.filter(data => data.id === 3).map(item => {
-        return (
-            <TextCard
-                key={item.id}
-                {...item}
-            />
-        )
-    })
+   
 
     const portfolioImgsSrc=[Frame42,Frame43,Frame41,Frame44,Frame45,Frame46,Frame47,Frame48]
 
     return (
         <main>
             
-            {textCard3}
+            {  <TextCard
+                {...textData[2]}
+            />}
 
             <div className="flex flex-col items-center px-6">
                 <div className="grid gap-y-16 sm:gap-y-6 gap-x-12 sm:grid-cols-2 justify-around py-12">

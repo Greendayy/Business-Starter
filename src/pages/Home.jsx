@@ -112,7 +112,11 @@ export default function Home() {
                 {textCard2}
 
 
-                <div className="flex flex-col sm:flex-row sm:space-x-12">
+                {/* <div className="flex flex-wrap gap-5 sm:flex-row sm:space-x-12 sm:mx-4">
+                
+         */}
+         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
                     {teamCard}
                 </div>
                 <input className="border rounded-lg h-12 bg-neutral text-white tracking-wide text-xl px-10 text-center my-12" type="button" value="View Team" readOnly></input>

@@ -6,12 +6,14 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        
-        <header className="w-full bg-green flex flex-col sm:flex-row px-4 sm:px-20 py-3 sm:pt-6 sm:items-center">
-            <div className="bg-green flex items-center sm:mr-auto">
-                <img className="h-10 w-10" src={Logo} />
-                <h1 className="text-white text-3xl ml-2 mr-auto tracking-wide">Start</h1>
-                <button onClick={() => setIsOpen(!isOpen)} className="sm:hidden text-4xl text-white">
+
+        <header className="w-full bg-green  sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+            <div className="bg-green flex items-center justify-between px-4 py-3 sm:p-0">
+                <div className="flex flex-row items-center ml-4">
+                    <img className="h-10 w-10" src={Logo} /><h1 className="text-white text-3xl ml-2 mr-auto tracking-wide">Start</h1>
+                </div>
+                <div onClick={() => setIsOpen(!isOpen)}>
+                <button  className="sm:hidden text-4xl text-white">
                     <svg t="1664008145513" className="h-6 w-6 text-white" viewBox="0 0 1024 1024" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" fill="#fff" p-id="3353" width="200" height="200">
                         {isOpen ?
@@ -23,15 +25,16 @@ export default function Header() {
                                 p-id="3354"></path>)}
                     </svg>
                 </button>
+                </div>
+                
             </div>
-            
-            <div className={isOpen ? "block" : "hidden"}>
-                <div className="flex flex-col text-sm text-white justify-end sm:flex-row sm:space-x-10">
-                    <Link to="/">Home</Link>
-                    <Link to="/portfolio">Portfolio</Link>
-                    <Link to="/service">Services</Link>
-                    <Link to="/contact">Contact</Link>
-                    <a href="https://baidu.com" target="_blank" rel="noopener noreferrer" >Baidu</a>
+            <div className={`${isOpen ? "block" : "hidden"} px-2 pt-2 pb-4 sm:flex sm:p-0`}>
+                <div className="flex flex-col text-white font-semibold sm:flex-row sm: justify-between sm:items-center sm:space-x-10">
+                    <Link to="/" className="mt-2 hover:bg-[#5a5757]">Home</Link>
+                    <Link to="/portfolio" className="mt-2 hover:bg-[#5a5757]">Portfolio</Link>
+                    <Link to="/service" className="mt-2 hover:bg-[#5a5757]">Services</Link>
+                    <Link to="/contact" className="mt-2 hover:bg-[#5a5757]">Contact</Link>
+                    <a href="https://baidu.com" target="_blank" rel="noopener noreferrer" className="mt-2">Baidu</a>
                 </div>
             </div>
         </header>
