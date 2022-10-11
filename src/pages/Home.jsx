@@ -14,7 +14,7 @@ export default function Home() {
   const logoImagsSrc = [Google, Microsoft, Airbnb, Facebook, Spotify];
 
   return (
-    <main>
+    <main className="w-screen">
       <div className="bg-green text-white">
         {<LoremCard {...loremData[0]} />}
       </div>
@@ -22,13 +22,13 @@ export default function Home() {
       {/* partners */}
       <div className="flex flex-col items-center">
         {<TextCard {...textData[0]} />}
-        <div className="flex flex-col space-y-10 my-7 sm:space-y-0 sm:flex-row sm:space-x-20">
+        <div className="flex flex-col space-y-10 my-7 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-10 sm:justify-items-center md:grid-cols-3 lg:grid-cols-4 xl:flex xl:flex-row xl:space-y-0 xl:space-x-10 xl:space-x-20">
           {logoImagsSrc.map((imgSrc, index) => (
             <img key={index} src={imgSrc} />
           ))}
         </div>
         <input
-          className="border rounded-lg h-12 bg-neutral text-white tracking-wide text-xl px-10 sm:px-3 text-center my-10 sm:my-20"
+          className="text-center my-10 border rounded-lg h-12 bg-neutral text-white tracking-wide text-xl px-10 sm:px-3 sm:my-3"
           type="button"
           value="Learn More"
           readOnly
@@ -36,14 +36,17 @@ export default function Home() {
       </div>
 
       {/* lorem */}
-      <div className="space-y-7 my-5">{<LoremCard {...loremData[1]} />}</div>
+      <div className="space-y-7 my-5">
+        {<LoremCard {...loremData[1]} />}
+        {<LoremCard {...loremData[2]} />}
+      </div>
 
       {/* team */}
 
       <div className="flex flex-col items-center">
         {<TextCard {...textData[1]} />}
 
-        <div className="flex flex-col sm:flex-row sm:space-x-12">
+        <div className="flex flex-col space-y-5 sm:grid sm:grid-cols-2 sm:gap-10 sm:space-y-0 lg:flex lg:flex-row lg:space-x-0 lg:mt-5 xl:space-x-12">
           {teamData.map((item) => {
             return <TeamCard key={item.id} {...item} />;
           })}

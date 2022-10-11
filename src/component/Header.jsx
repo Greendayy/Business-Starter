@@ -6,10 +6,10 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full bg-green flex flex-col sm:flex-row px-4 sm:px-20 py-3 sm:pt-6 sm:items-center">
-      <div className="bg-green flex items-center sm:mr-auto">
+    <header className="w-screen bg-green flex flex-col px-4 py-3 sm:flex-row sm:justify-between sm:px-6 md:px-20 sm:pt-6 sm:items-center">
+      <div className="flex bg-green items-center sm:mr-auto">
         <img className="h-10 w-10" src={Logo} />
-        <h1 className="text-white text-3xl ml-2 mr-auto tracking-wide">
+        <h1 className="ml-2 mr-auto text-3xl text-white tracking-wide">
           Start
         </h1>
         <button
@@ -42,13 +42,26 @@ export default function Header() {
         </button>
       </div>
 
-      <div className={`${isOpen ? "block" : "hidden"} sm:block`}>
-        <div className="flex flex-col text-sm text-white justify-end sm:flex-row sm:space-x-10">
-          <Link to="/">Home</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/service">Services</Link>
-          <Link to="/contact">Contact</Link>
-          <a href="https://baidu.com" target="_blank" rel="noopener noreferrer">
+      <div className={`${isOpen ? "block" : "hidden"} py-3 sm:block`}>
+        <div className="flex flex-col font-semibold text-white sm:flex-row sm:space-x-6">
+          <Link to="/" className="hover:bg-[#9ca3af]">
+            Home
+          </Link>
+          <Link to="/portfolio" className="hover:bg-[#9ca3af]">
+            Portfolio
+          </Link>
+          <Link to="/service" className="hover:bg-[#9ca3af]">
+            Services
+          </Link>
+          <Link to="/contact" className="hover:bg-[#9ca3af]">
+            Contact
+          </Link>
+          <a
+            href="https://baidu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:bg-[#9ca3af]"
+          >
             Baidu
           </a>
         </div>

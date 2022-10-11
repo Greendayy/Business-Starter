@@ -28,7 +28,7 @@ export default function Portfolio() {
       <div className="flex flex-col items-center px-6">
         <div className="grid gap-y-16 sm:gap-y-6 gap-x-12 sm:grid-cols-2 justify-around py-12">
           {portfolioImgsSrc.map((imgSrc, index) => (
-            <img key={index} src={imgSrc} />
+            <img key={index} src={imgSrc} className="hover:scale-105" />
           ))}
         </div>
       </div>
