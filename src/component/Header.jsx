@@ -9,10 +9,7 @@ export default function Headerm() {
       <div className="bg-green flex items-center sm:mr-auto">
         <img className="h-10 w-10" src={Logo} />
         <h1 className="text-white text-3xl ml-2 mr-auto">Start</h1>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="sm:hidden text-3xl text-white"
-        >
+        <button onClick={() => setIsOpen(!isOpen)} className="sm:hidden">
           <svg
             t="1664008145513"
             className="h-6 w-6 fill-current"
