@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Headerm() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   return (
-    <header className="bg-green flex flex-col sm:flex-row px-4 sm:px-20 py-3 sm:pt-6 sm:items-center">
+    <header className="bg-green flex flex-col sm:flex-row px-4 sm:px-20 py-3 sm:pt-6 sm:items-center w-100%">
       <div className="bg-green flex items-center sm:mr-auto">
         <img className="h-10 w-10" src={Logo} />
         <h1 className="text-white text-3xl ml-2 mr-auto">Start</h1>
